@@ -1,0 +1,176 @@
+/* fonts */
+@font-face {
+  font-family: 'Exo 2.0';
+  src: url('../fonts/Exo20-Medium.eot');
+  src: url('../fonts/Exo20-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Exo20-Medium.woff2') format('woff2'), url('../fonts/Exo20-Medium.woff') format('woff'), url('../fonts/Exo20-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+/* mixins */
+/* variables */
+/* basics */
+body {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+}
+/* section */
+.section .title {
+  margin: 0 auto;
+  font-family: 'Exo 2.0', sans-serif;
+  font-size: 36px;
+  margin-top: 10px;
+}
+.section .brands {
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  width: 630px;
+  display: flex;
+  align-items: center;
+}
+.section .brands .brands__item {
+  width: 150px;
+  height: 48px;
+  border: none;
+  margin-right: 10px;
+  background-color: #f5f3e8;
+  transition: all 0.2s;
+  color: #77716a;
+  padding: 0;
+}
+.section .brands .brands__item span {
+  border-bottom: 1px dotted #77716a;
+}
+.section .brands .brands__item:hover {
+  background-color: #edead6;
+  transition: all 0.2s;
+}
+.section .brands .brands__item:last-child {
+  margin-right: 0;
+}
+.section .brands .brands__item:nth-child(2) {
+  background-color: #8fb52c;
+  transition: all 0.2s;
+}
+.section .brands .brands__item:nth-child(2):hover {
+  background-color: #7fa027;
+  transition: all 0.2s;
+}
+.section .cards {
+  width: 84.211%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section .cards .cards__item {
+  width: 300px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.section .cards .cards__item .item__image {
+  margin-bottom: 10px;
+}
+.section .cards .cards__item .item__pre-title {
+  font-size: 15px;
+  color: #3c2f20;
+}
+.section .cards .cards__item .item__title {
+  display: block;
+  font-family: 'Exo 2.0', sans-serif;
+  font-size: 35px;
+  line-height: 23px;
+  color: #3c2f20;
+  transition: all 0.2s;
+  margin-top: 3px;
+}
+.section .cards .cards__item .item__title .big {
+  border-bottom: 1px dotted #3c2f20;
+}
+.section .cards .cards__item .item__title .small {
+  border-bottom: 1px dotted #3c2f20;
+  font-size: 20px;
+}
+.section .cards .cards__item .item__title:hover {
+  cursor: pointer;
+  color: #5b84f0;
+  transition: all 0.2s;
+}
+.section .cards .cards__item .item__brand {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+@media (max-width: 1199px) {
+  .section .cards {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .section .cards {
+    width: 95%;
+    justify-content: space-between;
+  }
+  .section .cards .cards__item {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .section .cards .cards__item .item__image img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .section .brands {
+    width: 100%;
+  }
+  .section .cards {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .section .cards .cards__item {
+    width: 260px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .section .cards .cards__item .item__image img {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .section .title {
+    font-size: 25px;
+  }
+  .section .brands {
+    width: 84%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .section .brands .brands__item {
+    width: 40%;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+  .section .cards {
+    width: 95%;
+    justify-content: space-between;
+  }
+  .section .cards .cards__item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .section .cards .cards__item .item__image img {
+    width: 100%;
+  }
+  .section .cards .cards__item .item__description {
+    font-size: 15px;
+  }
+}
